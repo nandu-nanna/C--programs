@@ -17,17 +17,17 @@ int main()
         {
             if(i!=j)
             {
-                arr[k]=arr[k+1];
+                int temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
             }
-            size--;
-            j--;
+            j++;
         }
-    }
 }
-printf("array elements after deletion of duplicate elements:");
-for(i=0;i<size;i++)
+printf("the resultant array:");
+for(i=0;i<n;i++)
 {
     printf("%d\t",arr[i]);
 }
-return 0; 
-    }
+}
+            
